@@ -1,0 +1,110 @@
+/* 電撃少女エクレアとは */
+.members {
+	background: url("images/common/stripe.png");
+	background-size: 177px 151px;
+	overflow-x: hidden;
+	> ul {
+		margin: 64px 0;
+	}
+}
+
+.member {
+    max-width: 996px;
+    width: calc(100% - 32px);
+    margin: 24px auto;
+	display: flex;
+	align-items: flex-start;
+    text-align: left;
+    .member-image {
+        width: 180px;
+        height: 180px;
+        background-color: #EEE;
+        border-radius: 50%;
+        box-shadow: 0 3px 6px rgba(0,0,0,.1);
+    }
+    .member-inner {
+        margin-left: 36px;
+        flex: 1;
+    }
+    .member-name {
+        margin-top: 4px;
+        font-size: 2rem;
+        line-height: 1.5em;
+        font-weight: bold;
+    }
+    .member-degree {
+        margin-bottom: 16px;
+        color: rgba(#000, .5);
+	}
+
+	.member-embed iframe {
+		box-shadow: 0 2px 4px rgba(black,.2);
+	}
+	
+	ul {
+		margin: 16px 0;
+		padding-left: 1.25em;
+		list-style-type: disc;
+		line-height: 1.25em;
+	}
+
+    &.disabled {
+        .member-image {
+            background-color: #555;
+            padding: 48px;
+            opacity: .2;
+            box-shadow: none;
+        }
+        .member-name {
+            display: inline-block;
+            margin-bottom: .2em;
+            min-width: 30%;
+            background-color: rgba(#555,.2);
+            border-radius: 1em;
+        }
+        .member-degree {
+            display: block;
+            width: 50%;
+            background-color: rgba(#555,.1);
+            border-radius: 8px;
+        }
+        .member-description p {
+            display: block;
+            width: 100%;
+            background-color: rgba(#555,.05);
+            border-radius: 8px;
+        }
+    }
+}
+
+@include mq(pc-narrow){
+	.members h3 {
+		margin-left: 0px;
+	}
+	.members-movie {
+		margin-top: 48px;
+	}
+}
+@include mq(tl){
+	.members {
+		p {
+			text-shadow: 0 0 3px rgba($white,1);
+		}
+		h3 {
+			margin-left: 0px;
+			margin-bottom: 24px;
+		}
+	}
+}
+@include mq(sp){
+	.members {
+		overflow-x: visible;//hiddenだとstickyしなくなるクソバグ早く治せ
+		p {
+			font-size: 1.2em;
+		}
+		h3 {
+			margin-left: 0px;
+			font-size: 1.6em;
+		}
+	}
+}

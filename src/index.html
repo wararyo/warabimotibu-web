@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <span>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>わらびもち部</title>
@@ -21,48 +21,80 @@
   <body>
 	<header class="header">
 		<div class="header-container">
-			<p>header</p>
+			<h1><img src="images/logo.png" width="720" alt="わらびもち部"></h1>
+		</div>
+		<div id="about" class="about">
+			<p>
+				<span class="emphasized">モチベーションを高めたい。</span><br>
+				<span>そんな気持ちを持つ3人が集まり、</span>
+				<span>甘くてちょっとオシャレな音楽を作っています！</span>
+			</p>
 		</div>
 	</header>
-	<div id="about" class="about" v-lazy-container="{ selector: 'img' }">
-		<div class="section-header" v-bind:class="{hidden: shownInMobile}" ><h2>電撃少女エクレアとは</h2></div>
-		<div class="container">
-			<p>
-				<span><b>電撃少女エクレア</b>は、</span>
-				<span class="emphasized">スピード感・爽快感のある動き</span><br>
-				<span>を目指した</span>
-				<span>3Dアクションゲーム。</span>
-			</p>
-			<p>
-				<span>電気を操る少女</span>
-				<span>「<b>エクレア</b>」は、</span>
-				<span>彼女を救った</span>
-				<span>『<b>ギア</b>』の研究者</span>
-				<span>「<b>オレイエット</b>」</span>
-				<span>から依頼を受ける。</span>
-			</p>
-			<p>
-				<span>なんでも、大いなる力を持つ</span>
-				<span>『<b>時空のギア</b>』の一部を</span>
-				<span>武装ギア集団『<b>アーミーギア</b>』</span>
-				<span>から</span>
-				<span>回収して欲しいとのこと。</span>
-			</p>
-			<p>
-				<span>電撃を操るギア</span>
-				<span>「<b>ELE-GEAR</b>」を駆使しながら、</span>
-				<span>彼女はアーミーギアへ立ち向かう。</span>
-			</p>
-		</div>
+	<div id="members" class="members">
+		<div class="section-header" ><h2>メンバー</h2></div>
+		<ul>
+			<li class="member">
+				<img src="images/wararyo.png" class="member-image"/>
+				<div class="member-inner">
+					<h3 class="member-name">wararyo</h3>
+					<div class="member-degree">モチベ昇担当</div>
+					<div class="member-description">
+						<p>ミックスが好き。</p>
+						<ul>
+							<li>Twitter: <a href="https://twitter.com/wararyo">wararyo</a></li>
+							<li>Youtube: <a href="https://youtube.com/wararyo">wararyo</a></li>
+							<li>SoundCloud: <a href="https://soundcloud.com/wararyo">wararyo</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="member-embed">
+					<iframe width="320" height="180" src="https://www.youtube.com/embed/vpUJ94PxdJs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</li>
+			<li class="member">
+				<img src="images/reida-dentan.png" class="member-image"/>
+				<div class="member-inner">
+					<h3 class="member-name">礼田電探</h3>
+					<div class="member-degree">モチベ揚担当</div>
+					<div class="member-description">
+						<p>作詞が好き。</p>
+						<ul>
+							<li>Twitter: <a href="https://twitter.com/rAdarcomJP">rAdarcomJP</a></li>
+							<li>Youtube: <a href="https://www.youtube.com/channel/UCmkY_8Yu0mA3yMc5zlp0avA">礼田電探 a.k.a rAdar</a></li>
+							<li>SoundCloud: <a href="https://soundcloud.com/radar9800">radar9800</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="member-embed">
+					<iframe width="320" height="180" src="https://www.youtube.com/embed/WxZ0TK6Wbcg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</li>
+			<li class="member">
+				<img src="images/nonono.jpg" class="member-image"/>
+				<div class="member-inner">
+					<h3 class="member-name">ののの</h3>
+					<div class="member-degree">モチベ高担当</div>
+					<div class="member-description">
+						<p>コード進行が好き。</p>
+						<ul>
+							<li>Twitter: <a href="https://twitter.com/nonono_Qpic">nonono_Qpic</a></li>
+							<li>SoundCloud: <a href="https://soundcloud.com/no_no_no_so">no_no_no_so</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="member-embed">
+						<iframe width="320" height="180" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/538648086&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+				</div>
+			</li>
+		</ul>
 	</div>
 	<footer class="footer">
-		<img src="images/header/logo.png" width="400" alt="">
 		<div class="footer-social">
-			<a href="https://twitter.com/Eclair_HTL?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-lang="ja" data-show-count="false">Follow @Eclair_HTL</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 			<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-lang="ja" data-size="large" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 			<iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fqpic.jp%2Feclair&width=72&layout=button&action=like&size=large&show_faces=true&share=false&height=65&appId" width="88" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 		</div>
-		<p>&copy;Team HTL in Qpic</p>
+		<p>&copy; 2019 わらびもち部</p>
 	</footer>
 
     <!-- Scripts -->
@@ -79,7 +111,7 @@
     </script>
 
     <!-- SVG Effect -->
-    <svg height="0">
+    <svg height="0" style="display: none;">
 	<filter id="drop-shadow">
         <feGaussianBlur in="SourceAlpha" stdDeviation="4"></feGaussianBlur>
         <feColorMatrix result="matrixOut" in="offOut" type="matrix" values="1 0 0 0 0

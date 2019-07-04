@@ -1,7 +1,7 @@
 /*
 * Noto Sans JP (japanese) http://www.google.com/fonts/earlyaccess
 */
-@font-face {
+/*@font-face {
   font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 300;
@@ -24,4 +24,13 @@
    src: url("https://fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Bold.woff2") format('woff2'),
         url("https://fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Bold.woff") format('woff'),
         url("https://fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Bold.otf") format('opentype');
+}*/
+
+@font-face {
+     font-family: 'Urara H';
+     font-style: normal;
+     font-weight: normal;
+     src: url("fonts/Urara-H.woff2") format('woff2'),
+          url("fonts/Urara-H.woff") format('woff'),
+          url("fonts/Urara-H.otf") format('opentype');
 }

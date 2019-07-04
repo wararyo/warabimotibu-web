@@ -3,13 +3,6 @@
 	background: url("images/common/stripe.png");
 	background-size: 177px 151px;
 	overflow-x: hidden;
-	box-shadow: 0 2px 4px rgba($black, .2);
-	
-	> .container {
-		margin: 0 auto ;
-		padding: 48px 0 72px;
-		position: relative;
-	}
 
 	p {
 		position: relative;
@@ -17,7 +10,7 @@
 		font-size: 1.4em;
 		line-height: 1.6em;
 		text-shadow: 0 1px 2px rgba(0,0,0,.1);
-		max-width: 600px;
+		text-align: center;
 		span {
 			display: inline-block;
 		}
@@ -27,34 +20,6 @@
 		font-weight: bold;
 		text-shadow: 0 3px 6px rgba(0,0,0,.2);
 	}
-
-	h3 {
-		position: relative;
-		font-size: 2em;
-		margin-top: 96px;
-		margin-left: -20px;
-		text-shadow: 0 3px 6px rgba(0,0,0,.2);
-		span {
-			display: inline-block;
-		}
-	}
-}
-
-.about-eclair {
-	height: 640px;
-	position: absolute;
-	right: 0;
-	top: -80px;
-}
-
-.about-movie {
-	position: relative;
-	float:right;
-	margin-right: -56px;
-	height: 360px;
-	width: 480px;
-	transform: rotate(6deg);
-	box-shadow: 0 3px 6px rgba($black,.3);
 }
 
 @include mq(pc-narrow){
@@ -75,12 +40,6 @@
 			margin-bottom: 24px;
 		}
 	}
-
-	.about-movie {
-		float: none;
-		margin: 16px auto;
-		transform: rotate(0);
-	}
 }
 @include mq(sp){
 	.about {
@@ -92,25 +51,5 @@
 			margin-left: 0px;
 			font-size: 1.6em;
 		}
-	}
-
-	.about-eclair {
-		display: none;
-	}
-
-	.about-movie {
-		display: none;
-		float: none;
-		transform: rotate(0);
-	}
-
-	.about-gif {
-		width: calc(100%);
-		height: auto;
-		margin: 16px 0;
-		box-shadow: 0 1px 2px rgba($black, .2);
-	}
-
-	#about-player {
 	}
 }
