@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>わらびもち部</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- OGP -->
+    <head prefix="og: http://ogp.me/ns# website: http://ogp.me/ns/website#">
+	<meta property="og:title" content="わらびもち部" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://motive.wararyo.com" />
+	<meta property="og:image" content="https://motive.wararyo.com/images/common/ogp.jpg" />
+	<meta property="og:site_name" content="わらびもち部" />
+	<meta property="og:description" content="" />
+	<!-- TwitterCard -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:image" content="https://motive.wararyo.com/images/common/ogp.jpg" />
+  </head>
+  <body>
+	<header class="header">
+		<div class="header-container">
+			<p>header</p>
+		</div>
+	</header>
+	<div id="about" class="about" v-lazy-container="{ selector: 'img' }">
+		<div class="section-header" v-bind:class="{hidden: shownInMobile}" ><h2>電撃少女エクレアとは</h2></div>
+		<div class="container">
+			<p>
+				<span><b>電撃少女エクレア</b>は、</span>
+				<span class="emphasized">スピード感・爽快感のある動き</span><br>
+				<span>を目指した</span>
+				<span>3Dアクションゲーム。</span>
+			</p>
+			<p>
+				<span>電気を操る少女</span>
+				<span>「<b>エクレア</b>」は、</span>
+				<span>彼女を救った</span>
+				<span>『<b>ギア</b>』の研究者</span>
+				<span>「<b>オレイエット</b>」</span>
+				<span>から依頼を受ける。</span>
+			</p>
+			<p>
+				<span>なんでも、大いなる力を持つ</span>
+				<span>『<b>時空のギア</b>』の一部を</span>
+				<span>武装ギア集団『<b>アーミーギア</b>』</span>
+				<span>から</span>
+				<span>回収して欲しいとのこと。</span>
+			</p>
+			<p>
+				<span>電撃を操るギア</span>
+				<span>「<b>ELE-GEAR</b>」を駆使しながら、</span>
+				<span>彼女はアーミーギアへ立ち向かう。</span>
+			</p>
+		</div>
+	</div>
+	<footer class="footer">
+		<img src="images/header/logo.png" width="400" alt="">
+		<div class="footer-social">
+			<a href="https://twitter.com/Eclair_HTL?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-lang="ja" data-show-count="false">Follow @Eclair_HTL</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-lang="ja" data-size="large" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			<iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fqpic.jp%2Feclair&width=72&layout=button&action=like&size=large&show_faces=true&share=false&height=65&appId" width="88" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+		</div>
+		<p>&copy;Team HTL in Qpic</p>
+	</footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+
+    <!-- SweetScroll -->
+    <script src="https://unpkg.com/sweet-scroll/sweet-scroll.min.js"></script>
+    <script>
+    	const sweetScroll = new SweetScroll({
+  			trigger: "a[href^='#']",
+  			offset: isPhone() ? -280 : -80,
+  			duration: 500
+		});
+    </script>
+
+    <!-- SVG Effect -->
+    <svg height="0">
+	<filter id="drop-shadow">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="4"></feGaussianBlur>
+        <feColorMatrix result="matrixOut" in="offOut" type="matrix" values="1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 0.25 0"></feColorMatrix>
+        <feOffset dx="0" dy="2" result="offsetblur"></feOffset>
+        <feMerge>
+            <feMergeNode></feMergeNode>
+            <feMergeNode in="SourceGraphic"></feMergeNode>
+        </feMerge>
+    </filter>
+	</svg>
+  </body>
+</html>

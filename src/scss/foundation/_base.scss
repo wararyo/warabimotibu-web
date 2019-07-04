@@ -1,0 +1,73 @@
+* {
+	-webkit-font-smoothing: antialiased;
+	font-family: 'Noto Sans JP', "Helvetica Neue", Helvetica, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+h1,h2,h3,h4 {
+	transform: rotate(0.05deg);
+}
+
+body {
+	background: url("images/common/polkadot.png"), url("images/bg/3.jpg"), $eclair-orange;
+	background-repeat: repeat, no-repeat;
+	background-attachment: fixed;
+	background-size: 48px 48px, cover;
+	background-position: center center;
+}
+
+img[lazy="loading"] {
+	max-width: 240px;
+	box-shadow: none !important;
+	animation: loading-icon 1s ease 0s infinite normal none running;
+}
+
+@keyframes loading-icon {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@include mq(sp){
+	body {
+		background: none;
+	}
+	body::before {
+	  background:url("images/common/polkadot.png"), url('images/bg/3.jpg');
+	  background-repeat: repeat, no-repeat;
+	  background-position: center center;
+	  background-size: 48px 48px, cover;
+	  display: block;
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  padding-bottom: 108px;
+	  content: "";
+	  z-index: -1;
+	} 
+}
+
+@include mq(tl){
+	body {
+		background: none;
+	}
+	body::before {
+	  background:url("images/common/polkadot.png"), url('images/bg/3.jpg');
+	  background-repeat: repeat, no-repeat;
+	  background-position: center center;
+	  background-size: 48px 48px, cover;
+	  display: block;
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  padding-bottom: 108px;
+	  content: "";
+	  z-index: -1;
+	} 
+}

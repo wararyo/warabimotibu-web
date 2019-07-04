@@ -1,0 +1,31 @@
+.footer {
+	width: 100%;
+	margin-top: 160px + 80px;
+	margin-bottom: -32px;
+	color: $white;
+	background-color: #232627;
+	text-align: center;
+
+	img {
+		margin-top: -160px;
+		transform: translateX(5%);
+	}
+	p{
+		padding: 64px 0;
+		font-size: 1em;
+	}
+}
+
+.footer-social {
+	margin-top: 48px;
+	iframe {
+		margin: 8px;
+	}
+}
+
+@include mq(sp){
+	.footer img {
+		width: calc(100% - 48px);
+		transform: translateX(0);
+	}
+}

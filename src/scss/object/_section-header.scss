@@ -1,0 +1,84 @@
+.section-header {
+	position: relative;
+	width: 100%;
+	height: 104px;
+	display: flex;
+	align-items: flex-end;
+	background: url("images/common/polkadot.png") #444;
+	background-size: 48px 48px;
+	box-shadow: 0 2px 4px rgba($black, .2);
+	animation: background-move 4s linear 0s infinite normal none running;
+	transition: opacity 0.1s;
+
+	h2 {
+		width: 1024px;
+		margin: 0 auto 16px;
+		font-size: 2.8em;
+		color: white;
+		text-shadow: 0 2px 8px rgba($black,.3);
+		transform: translateX(-40px);
+	}
+
+	&:before {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 24px;
+		position: absolute;
+		bottom: 0;
+		background-color: $eclair-orange;
+	}
+
+	&.cyan:before {
+		background-color: $eclair-cyan;
+	}
+	&.yellow:before {
+		background-color: $eclair-yellow-dark;
+	}
+
+	&.hidden {
+		opacity: 0;
+	}
+}
+
+@keyframes background-move {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 47px -47px;
+	}
+}
+@include mq(pc-narrow){
+	.section-header {
+		h2 {
+			width: 960px;
+			transform: translateX(0);
+		}
+	}
+}
+@include mq(tl){
+	.section-header {
+		h2 {
+			width: calc(100% - 32px);
+			transform: translateX(0);
+		}
+	}
+}
+@include mq(sp){
+	.section-header {
+		height: 56px;
+		position: sticky;
+		top: 0;
+		align-items: center;
+		box-shadow: none;
+		&:before {
+			height: 4px;
+		}
+		h2 {
+			margin: 0 0 0 50px;
+			font-size: 1.6em;
+			transform: translateY(-1px);
+		}
+	}
+}

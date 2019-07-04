@@ -1,0 +1,40 @@
+.container {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+.container-wide {
+	width: 1280px;
+	margin: 0 auto;
+}
+
+@include mq(pc-narrow){
+	.container {
+		width: 960px;
+		margin: 0 auto;
+	}
+	.container-wide {
+		width: 960px;
+		margin: 0 auto;
+	}
+}
+@include mq(tl){
+	.container {
+		width: calc(100% - 32px);
+		margin: 0 auto;
+	}
+	.container-wide {
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+@include mq(sp){
+	.container {
+		width: calc(100% - 32px);
+		margin: 0 auto;
+	}
+	.container-wide {
+		width: 100%;
+		margin: 0 auto;
+	}
+}

@@ -1,0 +1,10 @@
+.frame {
+	border-style: solid;
+	border-width: 64px;
+	border-image: url("images/common/frame.png") 128 128 128 128 fill repeat;
+}
+@include mq(sp){
+	.frame {
+		border-width: 48px;
+	}
+}

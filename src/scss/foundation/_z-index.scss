@@ -1,0 +1,93 @@
+$z:(
+	decoration,
+	image-back,
+	contents,
+	image-fore,
+	nav,
+	section-header-sp,
+	nav-top-sp,
+	hamburger-sp
+);
+
+.header-logo {
+	z-index: index($z, contents);
+}
+
+.header-hero {
+	z-index: index($z, image-back);
+}
+
+.header-detail {
+	z-index: index($z, contents);
+}
+
+.header-share {
+	z-index: index($z, contents);
+}
+
+.header-info {
+	z-index: index($z, contents);
+}
+
+.navigation {
+	z-index: index($z, nav);
+}
+.banner {
+	z-index: index($z, nav);
+}
+
+.about > .container {
+	z-index: index($z, contents);
+}
+.about-eclair {
+	z-index: index($z, image-back);
+}
+.about p, .about h3 {
+	z-index: index($z, contents);
+}
+.about-movie {
+	z-index: index($z, image-back);
+}
+
+.character p,.character h3 {
+	z-index: index($z, contents);
+}
+.characters-image {
+	z-index: index($z, image-back);
+}
+
+.banner {
+	z-index: index($z, image-fore);
+}
+
+.movie {
+	z-index: index($z, content);
+}
+
+.movie iframe {
+	z-index: index($z, image-back);
+}
+
+.movie a {
+	z-index: index($z, contents);
+}
+
+.movie-play {
+	z-index: index($z, image-fore);
+}
+.decoration-wrapper {
+	z-index: index($z, decoration);
+}
+@include mq(tl){
+}
+@include mq(sp){
+	.section-header {
+		z-index: index($z, section-header-sp);
+	}
+	.nav-top {
+		z-index: index($z, nav-top-sp);
+	}
+	.hamburger-mobile {
+		z-index: index($z, hamburger-sp);
+	}
+}
