@@ -21,6 +21,10 @@ img[lazy="loading"] {
 	animation: loading-icon 1s ease 0s infinite normal none running;
 }
 
+svg {
+	fill: currentColor;
+}
+
 @keyframes loading-icon {
 	0% {
 		transform: rotate(0deg);

@@ -1,5 +1,5 @@
-.news {
-    .news-inner {
+.work {
+    .work-inner {
         text-align: center;
         padding: 24px;
     }
@@ -8,10 +8,19 @@
         font-size: 2rem;
         text-shadow: 0 2px 4px rgba(black, .2);
     }
-    .news-location {
+    p {
+        margin: 0.5em 0;
+    }
+    li {
+        margin: 0.5em 0;
+    }
+    .work-location {
         margin: 1em 0;
         font-size: 2rem;
         text-shadow: 0 2px 4px rgba(black, .2);
+    }
+    img {
+        box-shadow: 0 2px 4px rgba(black, .2);
     }
 }
 
