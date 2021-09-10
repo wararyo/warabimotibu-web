@@ -95,7 +95,7 @@ gulp.task("js", function(done) {
         	message: "<%= error.message %>",
         	title: "風変わりなJavaScriptどすなあ"
       	})}))
-        .pipe(uglify())
+        // .pipe(uglify())
         .pipe(gulp.dest("dist/js/"));
     done();
 });
