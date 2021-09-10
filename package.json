@@ -15,14 +15,15 @@
   "author": "wararyo",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.18.13",
+    "browser-sync": "^2.27.5",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^4.0.0",
+    "gulp-autoprefixer": "^8.0.0",
     "gulp-frontnote": "^2.0.1",
-    "gulp-notify": "^3.0.0",
+    "gulp-notify": "^4.0.0",
     "gulp-plumber": "^1.1.0",
-    "gulp-sass": "^3.1.0",
+    "gulp-sass": "^5.0.0",
     "gulp-sass-glob": "^1.0.8",
-    "gulp-uglify": "^3.0.0"
+    "gulp-uglify": "^3.0.0",
+    "sass": "^1.39.2"
   }
 }

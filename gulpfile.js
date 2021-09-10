@@ -18,7 +18,7 @@ var imagefiles = "src/images/**";
 /*================*/
 
 var gulp = require("gulp");
-var sass = require("gulp-sass");
+var sass = require('gulp-sass')(require('sass'));
 var sassGlob = require("gulp-sass-glob");
 var autoprefixer = require("gulp-autoprefixer");
 var frontnote = require("gulp-frontnote");
