@@ -25,6 +25,11 @@ svg {
 	fill: currentColor;
 }
 
+a:link { color: #6c9246; }
+a:visited { color: #6c9246; }
+a:hover { color: #99d45d; }
+a:active { color: #99d45d; }
+
 @keyframes loading-icon {
 	0% {
 		transform: rotate(0deg);
