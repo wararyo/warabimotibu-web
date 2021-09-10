@@ -7,6 +7,7 @@ header, menu, nav, section, time, audio, video {
     outline: 0;
     font-size: 100%;
     vertical-align: baseline;
+    box-sizing: border-box;
 }
 body { line-height: 1; }
 article, footer, header, menu, nav, section { display: block; }
