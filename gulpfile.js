@@ -100,13 +100,14 @@ gulp.task("js", function(done) {
     done();
 });
 
-gulp.task("dist",gulp.parallel("js","sass","html","image"));
+gulp.task("dist",gulp.parallel("js","sass","html","image","font"));
 
 gulp.task("start",gulp.series( gulp.parallel('dist','server'), function() {
     gulp.watch(jsfiles,gulp.task("js"));
     gulp.watch(scssfiles,gulp.task("sass"));
     gulp.watch(htmlfiles,gulp.task("html"));
     gulp.watch(imagefiles,gulp.task("image"));
+    gulp.watch(fontfiles,gulp.task("font"));
     gulp.watch("dist/**",gulp.task("reload"));
 }));
 
