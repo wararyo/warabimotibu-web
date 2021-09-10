@@ -12,6 +12,7 @@ var htmlfiles = "src/**/*.html"
 var jsfiles = "src/js/**/*.js";
 var scssfiles = "src/scss/**/*.scss";
 var imagefiles = "src/images/**";
+var fontfiles = "src/fonts/**";
 
 //var server = "localhost:8888";
 
@@ -71,6 +72,12 @@ gulp.task("html", function(done) {
 gulp.task("image", function(done) {
     gulp.src(imagefiles)
         .pipe(gulp.dest("dist/images/"));
+    done();
+});
+
+gulp.task("font", function(done) {
+    gulp.src(fontfiles)
+        .pipe(gulp.dest("dist/fonts/"));
     done();
 });
 
