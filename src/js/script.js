@@ -1,7 +1,7 @@
 
 // <●> <●> モチベ昇太郎はあなたを見ています
 
-const motiveCharacters=["評", "上", "仰", "狂", "興", "良", "豹", "歐", "描", "報", "凌", "創", "奏", "凝", "超", "跳", "轟"];
+const motiveCharacters=["評", "上", "仰", "狂", "興", "良", "豹", "謳", "描", "報", "凌", "創", "奏", "凝", "超", "跳", "轟"];
 
 var updateMotiveDiagnosis = function(event) {
   var character = motiveCharacters[Math.floor(Math.random() * motiveCharacters.length)];
