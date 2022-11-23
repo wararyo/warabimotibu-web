@@ -15,7 +15,7 @@
   "author": "wararyo",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.27.5",
+    "browser-sync": "^2.27.10",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-frontnote": "^2.0.1",
